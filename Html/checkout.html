@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Asuransi</title>
+  <link rel="stylesheet" href="/css/checkout.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Checkout Asuransi</h1>
+    <p>Silakan pilih metode pembayaran dan lakukan pembayaran premi Anda</p>
+  </div>
+  <div class="checkout-section">
+    <form id="form-checkout">
+      <div class="form-group">
+        <label>Harga Premi yang Dibayarkan</label>
+        <input type="text" id="harga-premi" readonly value="Rp0">
+      </div>
+      <div class="form-group">
+        <label>Metode Pembayaran</label>
+        <select name="metode" required>
+          <option value="">Pilih Metode</option>
+          <option value="transfer">Transfer Bank</option>
+          <option value="ewallet">E-Wallet</option>
+          <option value="kartu">Kartu Kredit/Debit</option>
+        </select>
+      </div>
+      <button type="submit" id="bayar-btn">Bayar</button>
+    </form>
+    <div id="bayar-result"></div>
+  </div>
+  <script src="/js/checkout.js"></script>
+</body>
+</html>

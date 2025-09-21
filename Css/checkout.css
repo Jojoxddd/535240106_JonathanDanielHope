@@ -1,0 +1,63 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f6fafd;
+  margin: 0;
+}
+.header {
+  background: #2196f3;
+  color: #fff;
+  padding: 24px 0 16px 0;
+  text-align: center;
+}
+.checkout-section {
+  max-width: 400px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 32px;
+}
+.form-group {
+  margin-bottom: 18px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #2196f3;
+  font-weight: 500;
+}
+.form-group input[type="text"],
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #b3e5fc;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #f1f8fe;
+}
+button {
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background: #1976d2;
+}
+#bayar-result {
+  margin: 16px 0;
+  color: #1976d2;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .checkout-section {
+    padding: 16px;
+  }
+}

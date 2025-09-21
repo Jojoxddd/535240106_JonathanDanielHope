@@ -1,0 +1,77 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f6fafd;
+  margin: 0;
+}
+.header {
+  background: #4481eb;
+  color: #fff;
+  padding: 24px 0 16px 0;
+  text-align: center;
+}
+.nav {
+  background: #fff;
+  padding: 10px 0;
+  text-align: right;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+.nav a {
+  color: #4481eb;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+}
+.produk-section {
+  max-width: 800px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 32px;
+}
+.produk-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.produk-card {
+  background: #f1f8fe;
+  border-radius: 10px;
+  padding: 24px 18px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.produk-card h3 {
+  margin: 0 0 8px 0;
+  color: #4481eb;
+}
+.produk-card p {
+  margin: 0 0 16px 0;
+  color: #444;
+}
+.produk-card a {
+  display: inline-block;
+  background: #4481eb;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.produk-card a:hover {
+  background: #4481eb;
+}
+@media (max-width: 700px) {
+  .produk-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .produk-card {
+    width: 90%;
+  }
+  .produk-section {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembelian Asuransi Mobil</title>
+  <link rel="stylesheet" href="/css/kendaraan.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Pembelian Produk Asuransi Mobil</h1>
+    <p>Isi data mobil Anda untuk mendapatkan harga premi terbaik</p>
+  </div>
+  <div class="form-section">
+    <form id="form-mobil">
+      <div class="form-group">
+        <label>Merk Mobil</label>
+        <input type="text" name="merk" required>
+      </div>
+      <div class="form-group">
+        <label>Jenis Mobil</label>
+        <input type="text" name="jenis" required>
+      </div>
+      <div class="form-group">
+        <label>Tahun Pembuatan</label>
+        <input type="number" name="tahun" min="1980" max="2025" required>
+      </div>
+      <div class="form-group">
+        <label>Harga Mobil (Rp)</label>
+        <input type="number" name="harga" min="0" required>
+      </div>
+      <div class="form-group">
+        <label>Nomor Plat Mobil</label>
+        <input type="text" name="plat" required>
+      </div>
+      <div class="form-group">
+        <label>Nomor Mesin</label>
+        <input type="text" name="mesin" required>
+      </div>
+      <div class="form-group">
+        <label>Nomor Rangka</label>
+        <input type="text" name="rangka" required>
+      </div>
+      <div class="form-group">
+        <label>Nama Pemilik</label>
+        <input type="text" name="pemilik" required>
+      </div>
+      <div class="form-group">
+        <label>Foto Tampak Depan</label>
+        <input type="file" name="foto_depan" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <label>Foto Tampak Belakang</label>
+        <input type="file" name="foto_belakang" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <label>Foto Tampak Kiri</label>
+        <input type="file" name="foto_kiri" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <label>Foto Tampak Kanan</label>
+        <input type="file" name="foto_kanan" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <label>Foto Dashboard</label>
+        <input type="file" name="foto_dashboard" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <label>Foto Mesin</label>
+        <input type="file" name="foto_mesin" accept="image/*" required>
+      </div>
+      <button type="button" id="hitung-premi">Hitung Premi</button>
+      <div id="premi-result"></div>
+      <button type="submit" id="checkout-btn">Checkout</button>
+    </form>
+  </div>
+
+  <script src="/js/kendaraan.js"></script>
+</body>
+</html>

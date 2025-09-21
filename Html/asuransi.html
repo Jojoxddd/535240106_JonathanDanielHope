@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembelian Asuransi Kesehatan</title>
+  <link rel="stylesheet" href="/css/asuransi.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Pembelian Produk Asuransi Kesehatan</h1>
+    <p>Isi data Anda untuk mendapatkan harga premi terbaik</p>
+  </div>
+  <div class="form-section">
+    <form id="form-kesehatan">
+      <div class="form-group">
+        <label>Nama Lengkap sesuai KTP</label>
+        <input type="text" name="nama" required>
+      </div>
+      <div class="form-group">
+        <label>Tanggal Lahir</label>
+        <input type="date" name="lahir" required>
+      </div>
+      <div class="form-group">
+        <label>Pekerjaan</label>
+        <input type="text" name="pekerjaan" required>
+      </div>
+      <div class="form-group">
+        <label>Merokok</label>
+        <select name="merokok" required>
+          <option value="">Pilih</option>
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Punya Riwayat Hipertensi</label>
+        <select name="hipertensi" required>
+          <option value="">Pilih</option>
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Diabetes</label>
+        <select name="diabetes" required>
+          <option value="">Pilih</option>
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+      <button type="button" id="hitung-premi">Hitung Premi</button>
+      <div id="premi-result"></div>
+      <button type="submit" id="checkout-btn">Checkout</button>
+    </form>
+  </div>
+  <script src="/js/asuransi.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembelian Asuransi Jiwa</title>
+  <link rel="stylesheet" href="/Css/ajiwa.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Pembelian Produk Asuransi Jiwa</h1>
+    <p>Isi data Anda untuk mendapatkan harga premi terbaik</p>
+  </div>
+  <div class="form-section">
+    <form id="form-jiwa">
+      <div class="form-group">
+        <label>Nama Lengkap sesuai KTP</label>
+        <input type="text" name="nama" required>
+      </div>
+      <div class="form-group">
+        <label>Tanggal Lahir</label>
+        <input type="date" name="lahir" required>
+      </div>
+      <div class="form-group">
+        <label>Besaran Pertanggungan</label>
+        <select name="pertanggungan" required>
+          <option value="">Pilih</option>
+          <option value="1000000000">Rp1.000.000.000</option>
+          <option value="2000000000">Rp2.000.000.000</option>
+          <option value="3500000000">Rp3.500.000.000</option>
+          <option value="5000000000">Rp5.000.000.000</option>
+          <option value="10000000000">Rp10.000.000.000</option>
+        </select>
+      </div>
+      <button type="button" id="hitung-premi">Hitung Premi</button>
+      <div id="premi-result"></div>
+      <button type="submit" id="checkout-btn">Checkout</button>
+    </form>
+  </div>
+  <script src="/js/ajiwa.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f6fafd;
+  margin: 0;
+}
+.header {
+  background: #2196f3;
+  color: #fff;
+  padding: 24px 0 16px 0;
+  text-align: center;
+}
+.histori-section {
+  max-width: 800px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 32px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+th, td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #e3f2fd;
+  text-align: center;
+}
+th {
+  background: #e3f2fd;
+  color: #2196f3;
+  font-weight: 600;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+.status-lunas {
+  color: #388e3c;
+  font-weight: bold;
+}
+.status-belum {
+  color: #f44336;
+  font-weight: bold;
+}
+@media (max-width: 700px) {
+  .histori-section {
+    padding: 16px;
+  }
+  table, th, td {
+    font-size: 0.95em;
+  }
+}
